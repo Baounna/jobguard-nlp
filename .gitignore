@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
+.claude/
+
+# LaTeX intermediate files (we only ship the PDF)
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Large data files — not needed for the deployed app.
+# (To regenerate them, see scripts/download_data.sh and the notebooks.)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/tfidf_splits.pkl
+data/processed/*_backup*
+
+# Notebook outputs (keep the .ipynb files but ignore checkpoint dirs)
+notebooks/.ipynb_checkpoints/
